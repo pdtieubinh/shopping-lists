@@ -1,5 +1,4 @@
 # Project 1: Shared shopping list
-=======
 
 **Application Live Link:** https://binh-shopping-lists-application.onrender.com
 

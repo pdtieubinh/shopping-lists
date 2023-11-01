@@ -11,4 +11,4 @@
 <div>No shopping lists yet.</div>
 <% } %>
 
-<a href="/lists"></a>
+<div>Go to <a href="/lists">Shopping Lists</a></div>

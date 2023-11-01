@@ -37,7 +37,7 @@ const handleRequest = async (request) => {
       return await collectShoppingListItem(listId, itemId);
     } else if (url.pathname.startsWith("/lists") && parts.length === 2) {
       return await addShoppingList(request);
-    } else if (url.pathname.startsWith("/lists") && parts.length === 3) {
+    } else if (url.pathname.startsWith("/lists") && parts.length === 4) {
       const listId = parts[2];
       return await addShoppingListItems(request, listId);
     }

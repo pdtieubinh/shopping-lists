@@ -1,5 +1,6 @@
-import { countAllItems } from "../services/itemService";
-import { countAllLists, getAllLists } from "../services/listService";
+import { countAllItems } from "../services/itemService.js";
+import { countAllLists } from "../services/listService.js";
+import { renderFile } from "../deps.js";
 
 const responseDetails = {
   headers: { "Content-Type": "text/html;charset=UTF-8" },

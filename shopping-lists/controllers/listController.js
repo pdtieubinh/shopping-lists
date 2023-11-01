@@ -3,14 +3,15 @@ import {
   deactivateList,
   getActiveLists,
   getList,
-} from "../services/listService";
+} from "../services/listService.js";
 import { renderFile } from "../deps.js";
 import {
   addItem,
   collecItem,
   getCollectedItems,
   getUncollectedItems,
-} from "../services/itemService";
+} from "../services/itemService.js";
+import { redirectTo } from "../app.js";
 
 const responseDetails = {
   headers: { "Content-Type": "text/html;charset=UTF-8" },
@@ -37,8 +38,8 @@ export const showShoppingList = async (listId) => {
   const rows = await getList(listId);
   const list = rows[0];
 
-  const uncollectedItems = getUncollectedItems(listId);
-  const collectedItems = getCollectedItems(listId);
+  const uncollectedItems = await getUncollectedItems(listId);
+  const collectedItems = await getCollectedItems(listId);
 
   const data = {
     ...list,

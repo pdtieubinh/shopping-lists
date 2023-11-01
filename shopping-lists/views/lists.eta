@@ -5,7 +5,7 @@
 <h2>Add a shopping list</h2>
 <form method="POST" action="/lists">
   Shopping list name: <input data-testid="list-name-input" type="text" name="name" /><br/>
-  <input data-testid="add-list-btn" type="submit" value="Submit!" />
+  <input data-testid="add-list-btn" type="submit" value="Add Shopping List!" />
 </form>
 
 <h2>Active shopping lists</h2>
